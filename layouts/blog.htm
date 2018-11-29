@@ -1,16 +1,14 @@
-[googleTracker]
+[SeoCmsPage]
 ==
 {% set google_analytics_on = false %}
 
 <!DOCTYPE html>
 <html>
     <head>
+        {% component 'SeoCmsPage' %}
         {% partial 'html_head' %}
     </head>
     <body>
-        {% if google_analytics_on %}
-            {% component 'googleTracker' %}
-        {% endif %}
         {% partial 'navbar' %}
         {% partial 'blog/blog_header' %} 
         
@@ -21,7 +19,6 @@
             >
                 <section id="layout-content">
                     {% page %}
-                    
                 </section>
             </div>
         </div>

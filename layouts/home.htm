@@ -1,7 +1,3 @@
-[staticPage]
-useContent = 1
-default = 0
-
 [slideshow slideshowHomeHTML]
 slideshow = 7
 initAuto = 0
@@ -50,18 +46,19 @@ thumbMode = "auto"
 thumbQuality = 95
 thumbFiletype = "jpg"
 
-[googleTracker]
+[staticPage]
+useContent = 1
+default = 0
+
+[SeoStaticPage]
 ==
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+        {% component 'SeoStaticPage' %}
         {% partial 'html_head' %}
     </head>
     <body>
-        {% if google_analytics_on %}
-            {% component 'googleTracker' %}
-        {% endif %}
         {% partial 'navbar' %}          
         {% partial 'blog/blog_header' %} 
         <div id="barba-wrapper">

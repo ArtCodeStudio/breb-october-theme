@@ -25,6 +25,7 @@ categoryPage = "all-reports"
 [SeoBlogPost]
 post = "post"
 ==
+{% component 'SeoBlogPost' data=post %}
 <div class="blog-content-wrapper p-t-1" data-target="#blog-content-wrapper" id="blog-content-wrapper"> 
     <div class="container">
         <div class="row">
@@ -72,6 +73,7 @@ post = "post"
             {% partial 'blog/blog_sidebar' 
                 post=post
             %}
+            
             
         </div>
     </div>

@@ -4,7 +4,7 @@
 	<div class='row'>
 		<div class="col-xs-12">
 			{% for certificate in  this.theme.certificates %}
-				<img class="img-fluid" src="{{ certificate.file |media }}">
+				<img class="img-fluid" src="{{ certificate.file |media }}" alt="certificate">
 			{% endfor %}
 		</div>
 	</div>

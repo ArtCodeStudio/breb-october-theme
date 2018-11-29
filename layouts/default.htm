@@ -2,17 +2,15 @@
 useContent = 1
 default = 0
 
-[googleTracker]
+[SeoStaticPage]
 ==
 <!DOCTYPE html>
 <html>
     <head>
+        {% component 'SeoStaticPage' %}
         {% partial 'html_head' %}
     </head>
     <body>
-        {% if google_analytics_on %}
-            {% component 'googleTracker' %}
-        {% endif %}
         {% partial 'navbar' %}
         {% partial 'blog/blog_header' %} 
         <div id="barba-wrapper">
