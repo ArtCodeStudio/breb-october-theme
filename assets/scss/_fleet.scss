@@ -1,6 +1,11 @@
 #fleet{
 	#layout-content {
+	    
 		#default-layout-container {
+		    
+    	    .background-box {
+    	        background-size: contain !important;
+    	    }
 			
 	
 			.grid , .grid-sm{

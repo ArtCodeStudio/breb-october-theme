@@ -8343,6 +8343,9 @@ form.was-validated .invalid-feedback {
   #post .blog-content-wrapper .learn-more div:hover {
     text-decoration: underline; }
 
+#fleet #layout-content #default-layout-container .background-box {
+  background-size: contain !important; }
+
 #fleet #layout-content #default-layout-container .grid, #fleet #layout-content #default-layout-container .grid-sm {
   /* center */
   margin: 0 auto; }
