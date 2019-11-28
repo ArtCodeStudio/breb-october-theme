@@ -9,7 +9,7 @@ snippetName = "Overview"
 		<div class="card-group-flex-lg">
 
 			<div class="card">
-				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/shipping2.svg'|theme}}" alt="Shipping">
+				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/shipping.svg'|theme}}" alt="Shipping">
 				{# <h3 class="text-xs-center">{{mobiletitle}}</h3>#}
 				<div class="card-block">
 					<h3 class="text-xs-center text-serif">Shipping</h3>            
@@ -24,7 +24,7 @@ snippetName = "Overview"
 			</div>
 			
 			<div class="card">
-				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/linerservices2.svg'|theme}}" alt="Liner Services">
+				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/linerservices.svg'|theme}}" alt="Liner Services">
 				<div class="card-block">
 					<h3 class="text-xs-center text-serif">Liner Services</h3>
 					<div class='overview-content-container'>
@@ -37,43 +37,14 @@ snippetName = "Overview"
 				</div>
 			</div>
 			
-			<div class="card hidden-lg-down">
-				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/portagency2.svg'|theme}}" alt="Port Agency">
-				<div class="card-block">
-					<h3 class="text-xs-center text-serif">Port Agency</h3>
-					<div class='overview-content-container'>
-						{% content 'overview/PortAgency.htm' %}
-					</div>
-					<div class="learn-more m-x-auto text-xs-center">
-						<a href="/port-agency" class="read-more m-r-1">read more</a>
-						<a href="mailto:{{this.theme.portagency_email}}" class="btn btn-blue-outline m-l-1">contact</a>
-					</div>
-				</div>
-			</div>
-			
-			<div class="card hidden-lg-down">
-				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/offshore2.svg'|theme}}" alt="Offshore">				
-				<div class="card-block">
-					<h3 class="text-xs-center text-serif">Offshore</h3>
-					<div class='overview-content-container'>
-						{% content 'overview/Offshore.htm' %}
-					</div>
-					<div class="learn-more m-x-auto text-xs-center">
-						<a href="/offshore" class="read-more m-r-1">read more</a>
-						<a href="mailto:{{this.theme.offshore_email}}" class="btn btn-blue-outline m-l-1">contact</a>
-					</div>
-				</div>
-			</div>
-
 		</div>
 	</div>
 
-
-	<div class="row hidden-xl-up">
-		<div class="card-group-flex-lg">
+	<div class="row">
+		<div class="card-group-flex-lg p-t-3">
 			
 			<div class="card">
-				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/portagency2.svg'|theme}}" alt="Port Agency">
+				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/portagency.svg'|theme}}" alt="Port Agency">
 				<div class="card-block">
 					<h3 class="text-xs-center text-serif">Port Agency</h3>
 					<div class='overview-content-container'>
@@ -86,7 +57,7 @@ snippetName = "Overview"
 				</div>
 			</div>
 			<div class="card">
-				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/offshore2.svg'|theme}}" alt="Offshore">				
+				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/offshore.svg'|theme}}" alt="Offshore">				
 				<div class="card-block">
 					<h3 class="text-xs-center text-serif">Offshore</h3>
 					<div class='overview-content-container'>
@@ -98,7 +69,28 @@ snippetName = "Overview"
 					</div>
 				</div>
 			</div>
+			
 
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="card-group-flex-lg p-t-3">
+			
+			<div class="card">
+				<img class="m-x-auto p-b-2" src="{{'assets/images/icons/forwarding.svg'|theme}}" alt="Forwarding">				
+				<div class="card-block">
+					<h3 class="text-xs-center text-serif">Forwarding</h3>
+					<div class='overview-content-container'>
+						{% content 'overview/Forwarding.htm' %}
+					</div>
+					<div class="learn-more m-x-auto text-xs-center">
+						<a href="/forwarding" class="read-more m-r-1">read more</a>
+						<a href="mailto:{{this.theme.forwarding_email}}" class="btn btn-blue-outline m-l-1">contact</a>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 

@@ -288,6 +288,17 @@ var destroySlideshowSync = function () {
 /**
  *
  */
+var initForwarding = function (container) {
+	// Initialize Slideshow
+	initializeAnimatedModal( "#forwardingFullscreenButton", "forwardingAnimatedModal", "#fullscreenSlideshowHTML" );
+	initSlickFullscreenNav('#forwarding');
+	destroySlideshowSync();
+	initSlideshowSync();
+};
+
+/**
+ *
+ */
 var initShipping = function (container) {
 	// Initialize Slideshow
 	initializeAnimatedModal( "#shippingFullscreenButton", "shippingAnimatedModal", "#fullscreenSlideshowHTML" );
@@ -572,6 +583,7 @@ var initTemplate = {
 	'privacypolicy': initPrivacyPolicy,
 	'impressum–legaldisclosure': initLegalDisclosure,
 	'newsletter': initNewsletter,
+	'forwarding': initForwarding,
 };
 
 

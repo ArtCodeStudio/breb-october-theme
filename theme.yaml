@@ -160,7 +160,10 @@ form:
                 label: Port Agency
                 placeholder: eMail
                 tab: Contact
-
+            forwarding_email:
+                label: Forwarding
+                placeholder: eMail
+                tab: Contact
 
 # CONTACT / DEPARTMENT
             department_title:
@@ -238,6 +241,23 @@ form:
                 tab: Brand 
 
 # DOWNLOADS
+            forwarding_downloads:
+                label: Forwarding Downloads
+                type: repeater
+                tab: Downloads
+                form:
+                    fields:
+                        title:
+                            default: Document
+                            placeholder: The title of the document
+                            label: Title
+                            tab: Downloads
+                        file:
+                            label: File
+                            type: mediafinder
+                            mode: file
+                            tab: Downloads
+
             shipping_downloads:
                 label: Shipping Downloads
                 type: repeater

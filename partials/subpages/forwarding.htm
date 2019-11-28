@@ -1,0 +1,190 @@
+description = "Forwarding"
+
+[viewBag]
+snippetCode = "forwarding"
+snippetName = "Forwarding"
+
+[slideshow slideshowHTML]
+slideshow = 9
+initAuto = 0
+includeHTML = 1
+includeJavaScript = 0
+injectSlickAssets = 0
+injectSlickTheme = 0
+injectJLSlideshowCSS = 0
+injectJQuery = 0
+aspectRatio = "ratio-4-3"
+showCaptions = 1
+captionPosition = "middle center"
+adaptiveHeight = 0
+centerMode = 0
+centerPadding = "0px"
+autoplayOnShow = 1
+nextSlideOnEnd = 1
+autoplay = 0
+fade = 0
+infinite = 1
+slidesToShow = 1
+rtl = 0
+waitForAnimate = 1
+accessibility = 1
+arrows = 1
+dots = 0
+draggable = 1
+focusOnSelect = 0
+pauseOnFocus = 1
+pauseOnHover = 1
+pauseOnDotsHover = 0
+swipe = 1
+swipeToSlide = 0
+touchMove = 1
+verticalSwiping = 0
+useResize = 1
+thumbWidth = 1280
+thumbHeight = 960
+thumbMode = "auto"
+thumbQuality = 95
+thumbFiletype = "jpg"
+mobileFirst = 0
+respondTo = "window"
+useCSS = 1
+useTransform = 1
+variableWidth = 0
+vertical = 0
+
+[slideshow subSlideshowHTML]
+slideshow = 9
+initAuto = 0
+includeHTML = 1
+includeJavaScript = 0
+injectSlickAssets = 0
+injectSlickTheme = 0
+injectJLSlideshowCSS = 0
+injectJQuery = 0
+aspectRatio = "ratio-4-3"
+showCaptions = 1
+captionPosition = "middle center"
+adaptiveHeight = 0
+centerMode = 0
+centerPadding = "0px"
+autoplayOnShow = 1
+nextSlideOnEnd = 1
+autoplay = 0
+fade = 0
+infinite = 1
+slidesToShow = 1
+rtl = 0
+waitForAnimate = 1
+accessibility = 1
+arrows = 1
+dots = 0
+draggable = 1
+focusOnSelect = 0
+pauseOnFocus = 1
+pauseOnHover = 1
+pauseOnDotsHover = 0
+swipe = 1
+swipeToSlide = 0
+touchMove = 1
+verticalSwiping = 0
+useResize = 1
+thumbWidth = 1280
+thumbHeight = 960
+thumbMode = "auto"
+thumbQuality = 95
+thumbFiletype = "jpg"
+mobileFirst = 0
+respondTo = "window"
+useCSS = 1
+useTransform = 1
+variableWidth = 0
+vertical = 0
+
+[slideshow fullscreenSlideshowHTML]
+slideshow = 9
+initAuto = 0
+includeHTML = 1
+includeJavaScript = 0
+injectSlickAssets = 0
+injectSlickTheme = 0
+injectJLSlideshowCSS = 0
+injectJQuery = 0
+aspectRatio = "ratio-4-3"
+showCaptions = 1
+captionPosition = "middle center"
+adaptiveHeight = 0
+centerMode = 0
+centerPadding = "0px"
+autoplayOnShow = 1
+nextSlideOnEnd = 1
+autoplay = 0
+fade = 0
+infinite = 1
+slidesToShow = 1
+rtl = 0
+waitForAnimate = 1
+accessibility = 1
+arrows = 1
+dots = 0
+draggable = 1
+focusOnSelect = 0
+pauseOnFocus = 1
+pauseOnHover = 1
+pauseOnDotsHover = 0
+swipe = 1
+swipeToSlide = 0
+touchMove = 1
+verticalSwiping = 0
+useResize = 1
+thumbWidth = 1280
+thumbHeight = 960
+thumbMode = "auto"
+thumbQuality = 95
+thumbFiletype = "jpg"
+mobileFirst = 0
+respondTo = "window"
+useCSS = 1
+useTransform = 1
+variableWidth = 0
+vertical = 0
+==
+<div id="forwarding" data-target="#forwarding"> 
+
+        <div class="row">
+            
+			<div class="col-md-12 col-lg-5 p-b-3 section-headline-text" >
+				<div class="border-top"></div>
+				<h3 class="text-xs-center text-sm-left text-serif">{{ this.page.title }}</h3>  
+				
+				<div  class="p-y-3 content-container">             
+					{% content 'forwarding.htm' %}
+				</div>
+
+				<div class="text-xs-center text-sm-left">
+					<a href="mailto:{{this.theme.forwarding_email}}" class="btn btn-blue-outline m-b-3">contact</a>
+				</div>
+				
+				{% partial '/subpages/_downloads' 
+					downloads = this.theme.forwarding_downloads
+					zipFileName = 'Forwarding Documents.zip'
+				%}
+			</div>
+
+			<div class="col-md-12 col-lg-7 slideshow-container" >
+
+				{% partial '/subpages/_animated_modal' 
+					fullscreenButtonID = 'forwardingFullscreenButton'
+					name = 'forwardingAnimatedModal'
+					modalContent = 'fullscreenSlideshowHTML'
+				%}
+
+				{% component 'slideshowHTML' %}
+				{% component 'subSlideshowHTML' %}
+			</div>
+
+
+
+        </div>
+   
+        
+</div>

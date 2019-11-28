@@ -3,11 +3,6 @@
 <ul class="{{ class }}">
     
     {% for item in items %}
-        {#  {{item.url}}
-            {% if item.viewBag.cssClass == item.url %}
-                {% set active = 'active' %}
-            {% endif %} 
-        #}
         <li class="nav-item {{ item.isActive ? 'active' : '' }}{{item.viewBag.cssClass}}">
             {% if item.url %}
                 

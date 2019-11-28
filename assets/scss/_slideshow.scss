@@ -159,7 +159,7 @@
 }
 
 
-#linerservices, #shipping, #port_agency, #offshore {
+#linerservices, #shipping, #port_agency, #offshore, #forwarding {
 
 	.fullscreen-button{
 		background-image: url(../images/icons/small-w.svg);
@@ -271,7 +271,8 @@
 	* Slideshow Navigation carousel
 	*/
 	#linerServicesSlideshowHTML2, 
-	#shippingSlideshowHTML2, 
+	#shippingSlideshowHTML2,
+	#forwardingSlideshowHTML2, 
 	#portAgencySlideshowHTML2,
 	#offshoreSlideshowHTML2, 
 	#subSlideshowHTML

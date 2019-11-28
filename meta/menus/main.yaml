@@ -2,87 +2,104 @@ name: main
 items:
     -
         title: QHSE
-        type: url
-        url: /qhse
+        nesting: '0'
+        type: static-page
+        url: ''
         code: qhse
+        reference: qhse
+        cmsPage: ''
+        replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: qhse
             isExternal: '0'
     -
         title: Shipping
-        nesting: ''
-        type: url
-        url: /shipping
+        nesting: '0'
+        type: static-page
+        url: ''
         code: shipping
-        reference: ''
+        reference: shipping
         cmsPage: ''
-        replace: ''
+        replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: shipping
             isExternal: '0'
     -
         title: 'Liner Services'
-        nesting: ''
-        type: url
-        url: /liner-services
+        nesting: '0'
+        type: static-page
+        url: ''
         code: liner-services
-        reference: ''
+        reference: liner-services
         cmsPage: ''
-        replace: ''
+        replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: linerservices
             isExternal: '0'
     -
         title: 'Port Agency'
-        nesting: ''
-        type: url
-        url: /port-agency
+        nesting: '0'
+        type: static-page
+        url: ''
         code: port-agency
-        reference: ''
+        reference: port-agency
         cmsPage: ''
-        replace: ''
+        replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: portagency
             isExternal: '0'
     -
         title: Offshore
-        nesting: ''
-        type: url
-        url: /offshore
+        nesting: '0'
+        type: static-page
+        url: ''
         code: offshore
-        reference: ''
+        reference: offshore
         cmsPage: ''
-        replace: ''
+        replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: offshore
             isExternal: '0'
     -
-        title: Fleet
-        nesting: ''
-        type: url
-        url: /fleet
-        code: ''
-        reference: ''
+        title: Forwarding
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: forwarding
+        reference: forwarding
         cmsPage: ''
-        replace: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: forwarding
+            isExternal: '0'
+    -
+        title: Fleet
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: fleet
+        cmsPage: ''
+        replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: fleet
             isExternal: '0'
     -
         title: Contact
-        nesting: ''
-        type: url
-        url: /contact
+        nesting: '0'
+        type: static-page
+        url: ''
         code: contact
-        reference: ''
+        reference: contact
         cmsPage: ''
-        replace: ''
+        replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: contact
