@@ -14,37 +14,13 @@ items:
             cssClass: about
             isExternal: '0'
     -
-        title: Jobs
-        nesting: ''
-        type: url
-        url: /jobs
-        code: ''
-        reference: ''
-        cmsPage: ''
-        replace: ''
-        viewBag:
-            isHidden: '0'
-            cssClass: jobs
-            isExternal: '0'
-    -
-        title: QHSE
-        nesting: '0'
-        type: static-page
-        url: ''
-        code: qhse
-        reference: qhse
-        cmsPage: ''
-        replace: '0'
-        viewBag:
-            isHidden: '0'
-            cssClass: qhse
-            isExternal: '0'
-    -
         title: Newsletter
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: newsletter
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'

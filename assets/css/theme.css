@@ -7950,7 +7950,9 @@ a.text-danger:focus, a.text-danger:hover {
     position: relative;
     height: 100%;
     overflow: auto;
-    margin-top: 2.6rem; }
+    margin-top: 2.6rem;
+    padding-bottom: 5.2rem;
+    max-height: calc(100vh - 44px); }
     #sidebar .sidebar-wrapper .list-group .list-group-item {
       border: none;
       padding: 0.75rem 2.4rem; }
@@ -10992,6 +10994,9 @@ ul.list-white {
   ul.list-white li:before {
     content: "• ";
     color: #fff; }
+
+.lines-container {
+  min-height: 100vh; }
 
 body {
   max-width: 100%;

@@ -1,19 +1,6 @@
 name: main
 items:
     -
-        title: QHSE
-        nesting: '0'
-        type: static-page
-        url: ''
-        code: qhse
-        reference: qhse
-        cmsPage: ''
-        replace: '0'
-        viewBag:
-            isHidden: '0'
-            cssClass: qhse
-            isExternal: '0'
-    -
         title: Shipping
         nesting: '0'
         type: static-page
@@ -38,6 +25,19 @@ items:
         viewBag:
             isHidden: '0'
             cssClass: linerservices
+            isExternal: '0'
+    -
+        title: Fleet
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: fleet
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: fleet
             isExternal: '0'
     -
         title: 'Port Agency'
@@ -79,17 +79,28 @@ items:
             cssClass: forwarding
             isExternal: '0'
     -
-        title: Fleet
+        title: QHSE
         nesting: '0'
         type: static-page
         url: ''
-        code: ''
-        reference: fleet
+        code: qhse
+        reference: qhse
         cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
-            cssClass: fleet
+            cssClass: qhse
+            isExternal: '0'
+    -
+        title: Jobs
+        nesting: '0'
+        type: static-page
+        code: jobs
+        reference: jobs
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: jobs
             isExternal: '0'
     -
         title: Contact
@@ -105,14 +116,10 @@ items:
             cssClass: contact
             isExternal: '0'
     -
-        title: Reports
-        nesting: ''
+        title: News
         type: url
         url: /reports
-        code: ''
-        reference: ''
-        cmsPage: ''
-        replace: ''
+        code: reports
         viewBag:
             isHidden: '0'
             cssClass: reports
