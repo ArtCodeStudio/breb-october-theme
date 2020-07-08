@@ -1,5 +1,6 @@
 // Custom
 $theme-folder:                 'themes/breb-barba' !default;
+$blue-dark: #2b386d;
 
 //$fa-font-path:                 "../vendor/font-awesome/fonts" !default;
 
@@ -381,7 +382,7 @@ $navbar-dark-hover-color:           rgba(255,255,255,.75) !default;
 $navbar-dark-active-color:          rgba(255,255,255,1) !default;
 $navbar-dark-disabled-color:        rgba(255,255,255,.25) !default;
 
-$navbar-light-color:                rgba(0,0,0,.3) !default;
+$navbar-light-color:                rgba(0,0,0,.6) !default;
 $navbar-light-hover-color:          transparentize($brand-primary, 0.2);
 $navbar-light-active-color:         $brand-primary;
 $navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
@@ -620,11 +621,11 @@ $list-group-link-heading-color: #333 !default;
 
 // Image thumbnails
 
-$thumbnail-padding:           .25rem !default;
+$thumbnail-padding:           .6rem;
 $thumbnail-bg:                $body-bg !default;
 $thumbnail-border-width:      $border-width !default;
-$thumbnail-border-color:      #ddd !default;
-$thumbnail-border-radius:     $border-radius !default;
+$thumbnail-border-color:      $blue-dark;
+$thumbnail-border-radius:     5px;
 
 
 // Breadcrumbs

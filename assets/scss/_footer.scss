@@ -51,7 +51,7 @@
 	}
 
 	&#footer-legal-wrapper, #blog-header-wrapper {
-		background-color: $brand-primary;
+		background-color: $blue-dark;
 		a{
 			color: white;
 		}
@@ -102,7 +102,7 @@
 		.row {
 			//margin-left:3%;
 			// all items get right border except the last 
-			> div{
+			> div {
 				height:210px;
 
 				border-right : 1px solid $brand-primary;
@@ -155,19 +155,52 @@
 	justify-content: space-between;
 }
 
-#footer-certificates-container{
-	.row{
-		text-align:center;
-		.img-fluid{
-			display:inline!important;
-			max-height: 65px;
-		}
+#footer-certificates-container {
+	.row {
+		// text-align:center;
+		// .img-fluid{
+		// 	display: inline !important;
+		// 	max-height: 65px;
+		// }
 	}
 }
 
-.footer-contact-container-xs {
-	.column {
-		width: 193px;
-		margin: 0 auto;
+#footer-certificates-container {
+	.row {
+		text-align: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+		justify-content: center;
+        
+        .col-auto {
+            float: left;
+            width: auto;
+            padding-left: $grid-gutter-width / 2;
+            padding-right: $grid-gutter-width / 2;
+        }
+		
+		.certificates-row {
+		    // border-right: solid 1px black;
+		    img { 
+    			display: inline !important;
+    			height: 90px;
+		    }
+		}
+		.sozial-row {
+
+		    a {
+		        color: $blue-dark;
+		        svg { 
+        			display: inline !important;
+        			height: 50px;
+        			
+    		    }
+    		    &:hover, &:focus {
+		            color: white;
+    		    }
+		    }
+		}
 	}
 }
