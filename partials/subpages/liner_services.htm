@@ -165,7 +165,7 @@ thumbFiletype = "jpg"
 						<a href="mailto:{{this.theme.liner_services_email}}" class="btn btn-blue-outline m-b-3">contact</a>
 					</div>
 
-					{% partial '/subpages/_downloads' 
+					{% partial 'subpages/_downloads' 
 						downloads = this.theme.liner_services_downloads
 						zipFileName = 'Breb Liner-Services Documents.zip'
 					%}
@@ -176,7 +176,7 @@ thumbFiletype = "jpg"
 						
 			<div class="col-xs-12 col-lg-7 slideshow-container" >
 				
-				{% partial '/subpages/_animated_modal' 
+				{% partial 'subpages/_animated_modal' 
 					fullscreenButtonID = 'linerServicesFullscreenButton'
 					name = 'linerServicesAnimatedModal'
 					modalContent = 'fullscreenSlideshowHTML'
@@ -190,6 +190,6 @@ thumbFiletype = "jpg"
 			
         </div>
 
-		{% partial '/subpages/_lines' %}
+		{% partial 'subpages/_lines' %}
 
 </div>

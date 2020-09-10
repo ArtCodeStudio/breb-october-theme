@@ -170,7 +170,7 @@ thumbFiletype = "jpg"
 					<a href="mailto:{{this.theme.offshore_email}}" class="btn btn-blue-outline m-b-3">contact</a>
 				</div>
 				
-				{% partial '/subpages/_downloads' 
+				{% partial 'subpages/_downloads' 
 					downloads = this.theme.offshore_downloads
 					zipFileName = 'Breb Offshore Documents.zip'
 				%}
@@ -178,7 +178,7 @@ thumbFiletype = "jpg"
 
             <div class="col-md-12 col-lg-7 slideshow-container" >
                 
-                {% partial '/subpages/_animated_modal' 
+                {% partial 'subpages/_animated_modal' 
 					fullscreenButtonID = 'offshoreFullscreenButton'
 					name = 'offshoreAnimatedModal'
 					modalContent = 'fullscreenSlideshowHTML'

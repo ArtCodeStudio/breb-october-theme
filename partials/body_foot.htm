@@ -202,12 +202,13 @@ thumbFiletype = "jpg"
 includeHTML = 0
 includeJavaScript = 1
 ==
+<script src="{{ 'assets/vendor/jquery/dist/jquery.min.js' | theme }}"></script>
+<script src="{{ 'assets/vendor/jquery-ui/jquery-ui.min.js' | theme }}"></script>
+
 <script src="{{ [
-    'assets/vendor/jquery/dist/jquery.min.js',
-    'assets/vendor/jquery-ui/jquery-ui.min.js',
     'assets/vendor/tether/dist/js/tether.js',
-    'assets/vendor/bootstrap/dist/js/bootstrap.js',
-    'assets/vendor/slick-carousel/slick/slick.js',
+    'assets/vendor/bootstrap/dist/js/bootstrap.min.js',
+    'assets/vendor/slick-carousel/slick/slick.min.js',
     'assets/vendor/simpler-sidebar/dist/jquery.simpler-sidebar.min.js',
     'assets/vendor/animatedModal.js-master/animatedModal.js',
     'assets/vendor/masonry/dist/masonry.pkgd.min.js',
@@ -215,7 +216,7 @@ includeJavaScript = 1
     'assets/javascript/transformicons.min.js',
     'assets/vendor/barba.js/dist/barba.min.js',
     'assets/javascript/pages/main.js',
-    'assets/javascript/jquery.jumplink-mediaquery-monitor.js',
+    'assets/javascript/jquery.jumplink-mediaquery-monitor.js', 
     'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js'
 ]|theme }}"></script>
 

@@ -164,7 +164,7 @@ vertical = 0
 					<a href="mailto:{{this.theme.forwarding_email}}" class="btn btn-blue-outline m-b-3">contact</a>
 				</div>
 				
-				{% partial '/subpages/_downloads' 
+				{% partial 'subpages/_downloads' 
 					downloads = this.theme.forwarding_downloads
 					zipFileName = 'Forwarding Documents.zip'
 				%}
@@ -172,7 +172,7 @@ vertical = 0
 
 			<div class="col-md-12 col-lg-7 slideshow-container" >
 
-				{% partial '/subpages/_animated_modal' 
+				{% partial 'subpages/_animated_modal' 
 					fullscreenButtonID = 'forwardingFullscreenButton'
 					name = 'forwardingAnimatedModal'
 					modalContent = 'fullscreenSlideshowHTML'

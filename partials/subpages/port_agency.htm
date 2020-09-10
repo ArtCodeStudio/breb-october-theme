@@ -161,7 +161,7 @@ thumbFiletype = "jpg"
                     <a href="mailto:{{this.theme.portagency_email}}" class="btn btn-blue-outline m-b-3">contact</a>
                 </div>
                 
-                {% partial '/subpages/_downloads' 
+                {% partial 'subpages/_downloads' 
 					downloads = this.theme.port_agency_downloads
 					zipFileName = 'Breb Port Agency Documents.zip'
 				%}
@@ -169,7 +169,7 @@ thumbFiletype = "jpg"
 
 
             <div class="col-md-12 col-lg-7 slideshow-container" >
-                {% partial '/subpages/_animated_modal' 
+                {% partial 'subpages/_animated_modal' 
                     fullscreenButtonID = 'portAgencyFullscreenButton'
                     name = 'portAgencyAnimatedModal'
                     modalContent = 'fullscreenSlideshowHTML'
