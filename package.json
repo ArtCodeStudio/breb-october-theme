@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.mediamor.de/jumplink.eu/breb-october-theme.git"
+    "url": "git@github.com:ArtCodeStudio/breb-october-theme.git"
   },
   "author": "",
   "license": "MIT",
